@@ -1,0 +1,203 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #DAE0E2;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  padding: 20px 50px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  background-color: white;
+  padding: 5px 30px 15px;
+  border-radius: 10px;
+  width: auto;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  box-shadow: 2px 2px 50px rgb(150, 150, 150);
+}
+
+.form > * {
+  margin-right: 10px;
+}
+
+.form-group {
+  position: relative !important;
+}
+
+.form > div:nth-child(1) {
+  width: 250px;
+}
+
+.form > div:nth-child(2) {
+  width: 80px;
+}
+
+.form > button {
+  background-color: #ff3031;
+  color: white;
+  border: none;
+  margin-bottom: 17px;
+}
+
+.form label{
+  color: #666;
+  font-weight: 100;
+}
+
+.alert {
+  position: absolute !important;
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+  bottom: -25px !important;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+.images-container {
+  height: 200px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.images-container .cart-button-group {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.images-wrapper {
+  height: 100%;
+  padding: 20px 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.image-group {
+  position: relative;
+  height: 220px;
+  width: 220px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  margin-bottom: 20px
+}
+
+.image-group div.tick{
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.image-group div.tick i {
+  font-size: 18px;
+  color: #ff3031;
+}
+
+.image-group::after {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  content: "Add to cart";
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.image-group:hover::after{
+  opacity: 1;
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  border: 2px solid #666;
+  border-radius: 5px;
+}
+
+.cart-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #DAE0E2;
+}
+
+.cart-button-group {
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-button-group .btn {
+  margin-right: 10px !important;
+}
+
+.cart-images {
+  width: 500px;
+  height: auto;
+}
+
+.cart-image-group {
+  width: auto;
+  height: auto;
+  margin: 10px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.cart-image {
+  width: 180px;
+  height: 180px;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+
+.download-link {
+  margin: auto 50px;
+  height: auto;
+}
